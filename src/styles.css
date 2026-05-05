@@ -61,16 +61,24 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
 :root {
-  --radius: 0.625rem;
+  --radius: 1rem;
   --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --foreground: oklch(0.15 0.02 350);
+  --brand-pink: oklch(0.7 0.22 350);
+  --brand-pink-deep: oklch(0.6 0.25 350);
+  --brand-pink-soft: oklch(0.95 0.05 350);
+  --gradient-pink: linear-gradient(135deg, oklch(0.75 0.2 350), oklch(0.6 0.27 355));
+  --gradient-soft: linear-gradient(180deg, oklch(0.98 0.02 350), oklch(1 0 0));
+  --shadow-pink: 0 12px 40px -10px oklch(0.65 0.25 350 / 0.45);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
+  --primary: oklch(0.65 0.25 350);
+  --primary-foreground: oklch(1 0 0);
   --secondary: oklch(0.968 0.007 247.896);
   --secondary-foreground: oklch(0.208 0.042 265.755);
   --muted: oklch(0.968 0.007 247.896);
@@ -141,4 +149,9 @@
     background-color: var(--color-background);
     color: var(--color-foreground);
   }
+}
+
+@layer base {
+  html { scroll-behavior: smooth; font-family: 'Poppins', system-ui, sans-serif; }
+  body { font-family: 'Poppins', system-ui, sans-serif; }
 }
