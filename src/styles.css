@@ -150,3 +150,8 @@
     color: var(--color-foreground);
   }
 }
+
+@layer base {
+  html { scroll-behavior: smooth; font-family: 'Poppins', system-ui, sans-serif; }
+  body { font-family: 'Poppins', system-ui, sans-serif; }
+}
