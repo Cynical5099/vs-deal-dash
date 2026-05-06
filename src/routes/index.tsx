@@ -149,14 +149,14 @@ function Index() {
               <Gift className="h-7 w-7 text-[oklch(0.6_0.25_350)]" />
               <p className="mt-2 text-3xl font-extrabold">$100</p>
               <p className="text-sm text-foreground/60">Gift Card • Complete 5 deals</p>
-              <div className="mt-4"><CtaButton>Claim $100</CtaButton></div>
+              <div className="mt-4"><CtaButton href={LINK_100}>Claim $100</CtaButton></div>
             </div>
             <div className="rounded-3xl bg-black text-white p-5 shadow-xl relative overflow-hidden">
               <div className="absolute top-3 right-3 rounded-full bg-[image:var(--gradient-pink)] px-2.5 py-1 text-[10px] font-bold">BEST VALUE</div>
               <Star className="h-7 w-7 text-[oklch(0.75_0.22_350)]" />
               <p className="mt-2 text-3xl font-extrabold">$750</p>
               <p className="text-sm text-white/60">Gift Card • Complete 20 deals</p>
-              <div className="mt-4"><CtaButton>Claim $750</CtaButton></div>
+              <div className="mt-4"><CtaButton href={LINK_750}>Claim $750</CtaButton></div>
             </div>
             <FunFact />
           </div>
