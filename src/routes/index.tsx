@@ -7,8 +7,8 @@ import { ChevronDown, Gift, Sparkles, Download, Gamepad2, Repeat, Star, Trending
 //  👇  PASTE YOUR OFFER LINKS HERE  👇
 //  Each reward tier has its own link.
 // ============================================================
-const LINK_100 = "https://example.com/your-100-offer-link";
-const LINK_750 = "https://example.com/your-750-offer-link";
+const LINK_100 = "https://linkthem.net/aff_c?offer_id=2412&aff_id=21664";
+const LINK_750 = "https://giftclick.org/aff_c?offer_id=2767&aff_id=21664";
 // ============================================================
 
 export const Route = createFileRoute("/")({
