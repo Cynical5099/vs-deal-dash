@@ -98,8 +98,8 @@ function Index() {
               Choose your reward of <b>$100</b> or <b>$750</b>. Just complete a few simple deals.
             </p>
             <div className="mt-5 space-y-3">
-              <CtaButton>Claim $100 Reward 🎁</CtaButton>
-              <CtaButton variant="outline">Claim $750 Reward 💎</CtaButton>
+              <CtaButton href={LINK_100}>Claim $100 Reward 🎁</CtaButton>
+              <CtaButton href={LINK_750} variant="outline">Claim $750 Reward 💎</CtaButton>
             </div>
             <div className="mt-5"><FunFact /></div>
             <p className="mt-3 text-[10px] text-foreground/50 text-center">
