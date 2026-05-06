@@ -25,8 +25,6 @@ const steps = [
   { n: 1, t: "Sign up with your email" },
   { n: 2, t: "Choose your reward ($100 = 5 deals / $750 = 20 deals)" },
   { n: 3, t: "Complete sponsored deals (~15 mins each)" },
-  { n: 4, t: "Submit your ID for verification" },
-  { n: 5, t: "Receive your gift card within 6 to 10 days" },
 ];
 
 const dealTypes = [
@@ -40,11 +38,11 @@ const faqs = [
   { q: "How many deals do I have to complete?", a: "It depends on the reward you choose. $100 = 5 deals, $750 = 20 deals." },
   { q: "How long does each deal take?", a: "Most deals take around 10 to 15 minutes to complete. Some may take up to 60 days, but the majority are quick." },
   { q: "Are the deals paid?", a: "Many deals are no-cost (app downloads, trials), but some may require a small purchase for a product or service." },
-  { q: "How long until I receive my reward?", a: "Once you complete your deals and verify your ID, most customers receive their reward within 6 to 10 days." },
+  { q: "How long until I receive my reward?", a: "Most customers receive their reward within 6 to 10 days after completing their deals." },
   { q: "Do I have to do the deals all at once?", a: "Nope! You can complete them at your own pace." },
   { q: "Is this legit?", a: "Yes! Last year over $1.8 million in rewards were given out to customers just like you." },
   { q: "Can I pick which deals I want to do?", a: "Yes! You browse available deals and choose the ones that interest you." },
-  { q: "What happens after I complete my deals?", a: "You'll go through a quick ID verification process, then our team delivers your reward within 1 to 3 business days after verification." },
+  { q: "What happens after I complete my deals?", a: "Our team delivers your reward within 1 to 3 business days after your deals are confirmed." },
 ];
 
 function CtaButton({ children, href, variant = "solid" }: { children: React.ReactNode; href: string; variant?: "solid" | "outline" }) {
