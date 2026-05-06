@@ -47,12 +47,12 @@ const faqs = [
   { q: "What happens after I complete my deals?", a: "You'll go through a quick ID verification process, then our team delivers your reward within 1 to 3 business days after verification." },
 ];
 
-function CtaButton({ children, variant = "solid" }: { children: React.ReactNode; variant?: "solid" | "outline" }) {
+function CtaButton({ children, href, variant = "solid" }: { children: React.ReactNode; href: string; variant?: "solid" | "outline" }) {
   const base = "block w-full text-center rounded-full font-bold tracking-tight py-4 text-base transition-all active:scale-[0.97]";
   const style = variant === "solid"
     ? "text-white bg-[image:var(--gradient-pink)] shadow-[var(--shadow-pink)]"
     : "border-2 border-[oklch(0.65_0.25_350)] text-[oklch(0.55_0.25_350)] bg-white";
-  return <a href={CTA_LINK} className={`${base} ${style}`}>{children}</a>;
+  return <a href={href} className={`${base} ${style}`}>{children}</a>;
 }
 
 function FunFact() {
