@@ -14,7 +14,7 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Victoria's Secret Gift Card — Claim $100 or $750" },
+      { title: "Victoria's Secret Gift Card · Claim $100 or $750" },
       { name: "description", content: "Choose a $100 or $750 Victoria's Secret gift card by completing a few simple sponsored deals." },
     ],
   }),
@@ -25,7 +25,7 @@ const steps = [
   { n: 2, t: "Choose your reward ($100 = 5 deals / $750 = 20 deals)" },
   { n: 3, t: "Complete sponsored deals (~15 mins each)" },
   { n: 4, t: "Submit your ID for verification" },
-  { n: 5, t: "Receive your gift card within 6–10 days" },
+  { n: 5, t: "Receive your gift card within 6 to 10 days" },
 ];
 
 const dealTypes = [
@@ -37,13 +37,13 @@ const dealTypes = [
 
 const faqs = [
   { q: "How many deals do I have to complete?", a: "It depends on the reward you choose. $100 = 5 deals, $750 = 20 deals." },
-  { q: "How long does each deal take?", a: "Most deals take around 10–15 minutes to complete. Some may take up to 60 days, but the majority are quick." },
+  { q: "How long does each deal take?", a: "Most deals take around 10 to 15 minutes to complete. Some may take up to 60 days, but the majority are quick." },
   { q: "Are the deals paid?", a: "Many deals are no-cost (app downloads, trials), but some may require a small purchase for a product or service." },
-  { q: "How long until I receive my reward?", a: "Once you complete your deals and verify your ID, most customers receive their reward within 6–10 days." },
+  { q: "How long until I receive my reward?", a: "Once you complete your deals and verify your ID, most customers receive their reward within 6 to 10 days." },
   { q: "Do I have to do the deals all at once?", a: "Nope! You can complete them at your own pace." },
   { q: "Is this legit?", a: "Yes! Last year over $1.8 million in rewards were given out to customers just like you." },
   { q: "Can I pick which deals I want to do?", a: "Yes! You browse available deals and choose the ones that interest you." },
-  { q: "What happens after I complete my deals?", a: "You'll go through a quick ID verification process, then our team delivers your reward within 1–3 business days after verification." },
+  { q: "What happens after I complete my deals?", a: "You'll go through a quick ID verification process, then our team delivers your reward within 1 to 3 business days after verification." },
 ];
 
 function CtaButton({ children, variant = "solid" }: { children: React.ReactNode; variant?: "solid" | "outline" }) {
@@ -94,7 +94,7 @@ function Index() {
               Get a <span className="bg-gradient-to-r from-[oklch(0.6_0.27_355)] to-[oklch(0.7_0.22_340)] bg-clip-text text-transparent">Victoria's Secret</span> Gift Card 💕
             </h1>
             <p className="mt-3 text-[15px] text-foreground/70 leading-relaxed">
-              Choose your reward — <b>$100</b> or <b>$750</b> — just complete a few simple deals.
+              Choose your reward of <b>$100</b> or <b>$750</b>. Just complete a few simple deals.
             </p>
             <div className="mt-5 space-y-3">
               <CtaButton>Claim $100 Reward 🎁</CtaButton>
@@ -126,7 +126,7 @@ function Index() {
         <section className="px-5 py-10 bg-pink-50/60">
           <h2 className="text-2xl font-extrabold tracking-tight">What Are the Deals?</h2>
           <p className="mt-2 text-[14px] text-foreground/70 leading-relaxed">
-            Sponsored offers from our partners — app downloads, trials, mobile games, and subscriptions. Some have no cost, others may require a small payment. You choose.
+            Sponsored offers from our partners like app downloads, trials, mobile games, and subscriptions. Some have no cost, others may require a small payment. You choose.
           </p>
           <div className="mt-5 grid grid-cols-2 gap-3">
             {dealTypes.map((d) => (
@@ -161,7 +161,7 @@ function Index() {
           </div>
         </section>
 
-        {/* FAQ — last section */}
+        {/* FAQ last section */}
         <section className="px-5 py-10 bg-pink-50/60">
           <h2 className="text-2xl font-extrabold tracking-tight">Got Questions? 💭</h2>
           <div className="mt-3">
