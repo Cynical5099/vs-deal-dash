@@ -4,10 +4,11 @@ import { DesktopOverlay } from "@/components/DesktopOverlay";
 import { ChevronDown, Gift, Sparkles, Download, Gamepad2, Repeat, Star, TrendingUp } from "lucide-react";
 
 // ============================================================
-//  👇  PASTE YOUR CTA / OFFER LINK HERE  👇
-//  This single URL is used by every "Claim" button on the page.
+//  👇  PASTE YOUR OFFER LINKS HERE  👇
+//  Each reward tier has its own link.
 // ============================================================
-const CTA_LINK = "https://example.com/your-offer-link";
+const LINK_100 = "https://example.com/your-100-offer-link";
+const LINK_750 = "https://example.com/your-750-offer-link";
 // ============================================================
 
 export const Route = createFileRoute("/")({
@@ -46,12 +47,12 @@ const faqs = [
   { q: "What happens after I complete my deals?", a: "You'll go through a quick ID verification process, then our team delivers your reward within 1 to 3 business days after verification." },
 ];
 
-function CtaButton({ children, variant = "solid" }: { children: React.ReactNode; variant?: "solid" | "outline" }) {
+function CtaButton({ children, href, variant = "solid" }: { children: React.ReactNode; href: string; variant?: "solid" | "outline" }) {
   const base = "block w-full text-center rounded-full font-bold tracking-tight py-4 text-base transition-all active:scale-[0.97]";
   const style = variant === "solid"
     ? "text-white bg-[image:var(--gradient-pink)] shadow-[var(--shadow-pink)]"
     : "border-2 border-[oklch(0.65_0.25_350)] text-[oklch(0.55_0.25_350)] bg-white";
-  return <a href={CTA_LINK} className={`${base} ${style}`}>{children}</a>;
+  return <a href={href} className={`${base} ${style}`}>{children}</a>;
 }
 
 function FunFact() {
@@ -97,8 +98,8 @@ function Index() {
               Choose your reward of <b>$100</b> or <b>$750</b>. Just complete a few simple deals.
             </p>
             <div className="mt-5 space-y-3">
-              <CtaButton>Claim $100 Reward 🎁</CtaButton>
-              <CtaButton variant="outline">Claim $750 Reward 💎</CtaButton>
+              <CtaButton href={LINK_100}>Claim $100 Reward 🎁</CtaButton>
+              <CtaButton href={LINK_750} variant="outline">Claim $750 Reward 💎</CtaButton>
             </div>
             <div className="mt-5"><FunFact /></div>
             <p className="mt-3 text-[10px] text-foreground/50 text-center">
@@ -148,14 +149,14 @@ function Index() {
               <Gift className="h-7 w-7 text-[oklch(0.6_0.25_350)]" />
               <p className="mt-2 text-3xl font-extrabold">$100</p>
               <p className="text-sm text-foreground/60">Gift Card • Complete 5 deals</p>
-              <div className="mt-4"><CtaButton>Claim $100</CtaButton></div>
+              <div className="mt-4"><CtaButton href={LINK_100}>Claim $100</CtaButton></div>
             </div>
             <div className="rounded-3xl bg-black text-white p-5 shadow-xl relative overflow-hidden">
               <div className="absolute top-3 right-3 rounded-full bg-[image:var(--gradient-pink)] px-2.5 py-1 text-[10px] font-bold">BEST VALUE</div>
               <Star className="h-7 w-7 text-[oklch(0.75_0.22_350)]" />
               <p className="mt-2 text-3xl font-extrabold">$750</p>
               <p className="text-sm text-white/60">Gift Card • Complete 20 deals</p>
-              <div className="mt-4"><CtaButton>Claim $750</CtaButton></div>
+              <div className="mt-4"><CtaButton href={LINK_750}>Claim $750</CtaButton></div>
             </div>
             <FunFact />
           </div>
