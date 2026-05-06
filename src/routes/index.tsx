@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
 
 const steps = [
   { n: 1, t: "Sign up with your email" },
-  { n: 2, t: "Choose your reward ($100 = 5 deals / $750 = 20 deals)" },
+  { n: 2, t: "Choose your reward ($100 = 5 deals / $750 = 5+ deals)" },
   { n: 3, t: "Complete sponsored deals (~15 mins each)" },
 ];
 
@@ -35,7 +35,7 @@ const dealTypes = [
 ];
 
 const faqs = [
-  { q: "How many deals do I have to complete?", a: "It depends on the reward you choose. $100 = 5 deals, $750 = 20 deals." },
+  { q: "How many deals do I have to complete?", a: "It depends on the reward you choose. $100 = 5 deals, $750 = 5+ deals." },
   { q: "How long does each deal take?", a: "Most deals take around 10 to 15 minutes to complete. Some may take up to 60 days, but the majority are quick." },
   { q: "Are the deals paid?", a: "Many deals are no-cost (app downloads, trials), but some may require a small purchase for a product or service." },
   { q: "How long until I receive my reward?", a: "Most customers receive their reward within 6 to 10 days after completing their deals." },
@@ -153,7 +153,7 @@ function Index() {
               <div className="absolute top-3 right-3 rounded-full bg-[image:var(--gradient-pink)] px-2.5 py-1 text-[10px] font-bold">BEST VALUE</div>
               <Star className="h-7 w-7 text-[oklch(0.75_0.22_350)]" />
               <p className="mt-2 text-3xl font-extrabold">$750</p>
-              <p className="text-sm text-white/60">Gift Card • Complete 20 deals</p>
+              <p className="text-sm text-white/60">Gift Card • Complete 5+ deals</p>
               <div className="mt-4"><CtaButton href={LINK_750}>Claim $750</CtaButton></div>
             </div>
             <FunFact />
