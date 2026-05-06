@@ -4,10 +4,11 @@ import { DesktopOverlay } from "@/components/DesktopOverlay";
 import { ChevronDown, Gift, Sparkles, Download, Gamepad2, Repeat, Star, TrendingUp } from "lucide-react";
 
 // ============================================================
-//  👇  PASTE YOUR CTA / OFFER LINK HERE  👇
-//  This single URL is used by every "Claim" button on the page.
+//  👇  PASTE YOUR OFFER LINKS HERE  👇
+//  Each reward tier has its own link.
 // ============================================================
-const CTA_LINK = "https://example.com/your-offer-link";
+const LINK_100 = "https://example.com/your-100-offer-link";
+const LINK_750 = "https://example.com/your-750-offer-link";
 // ============================================================
 
 export const Route = createFileRoute("/")({
